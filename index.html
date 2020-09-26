@@ -23,13 +23,13 @@
         </section>
         <div class="contenedor">
             <nav class="nav-main"> 
-            <img src="" alt="" class="nav-brand">
-            <ul class="nav-menu">
-                <li> <a href="#">Inicio</a> </li>
-                <li> <a href="#">Sobre mí</a>
-                </li> <li> <a href="#">Servicios</a> </li>
-                <li> <a href="#">Galería</a> </li>
-                <li> <a href="#">Contacto</a> </li>
+            <img src="" alt="" class="nav-main__brand">
+            <ul class="nav-main__menu">
+                <li> <a href="index.html">Inicio</a> </li>
+                <li> <a href="views/sobre-mi.html">Sobre mí</a>
+                </li> <li> <a href="views/servicios.html">Servicios</a> </li>
+                <li> <a href="views/galeria.html">Galería</a> </li>
+                <li> <a href="views/contacto.html">Contacto</a> </li>
                 <div class="nav-social">
                     <a href="https://facebook.com"> <i class="fab fa-facebook-f"></i> </a>
                     <a href="https://instagram.com"> <i class="fab fa-instagram"></i> </a>
@@ -43,10 +43,10 @@
 
     <main class="contenedor">
         <section class="tarjetas">
-            <div class="titular">
+            <div class="tarjetas__titular">
                 <h1>Martina Fico</h1>
             </div>
-            <div class="informacion contenedor">
+            <div class="tarjetas__info contenedor">
                 <div>
                     <p>Soy egresada de la Universidad de Buenos Aires - FADU, en 2019.
                     Además me especialicé en Diseño del Espacio Interior, también en FADU.
@@ -62,10 +62,10 @@
         </section>
 
         <section class="tarjetas">
-            <div class="titular">
+            <div class="tarjetas__titular">
                 <h1>Servicios</h1>
             </div>
-            <div class="informacion contenedor">
+            <div class="tarjetas__info contenedor">
                 <div>
                     <i class="fas fa-lightbulb">Idea</i>
                     <p>Traigo ideas a la vida. Ese es mi principal objetivo y mi visión, por lo que hago todo lo posible para imaginar profundamente su idea.</p>
@@ -86,10 +86,10 @@
         </section>
 
         <section class="tarjetas">
-            <div class="titular">
+            <div class="tarjetas__titular">
                 <h1>Galería</h1>
             </div>
-            <div class="informacion contenedor">
+            <div class="tarjetas__info contenedor">
                 <div>
                     <img src="https://picsum.photos/200" alt="" class="galeria">
                 </div>
@@ -106,15 +106,18 @@
         </section>
 
         <section class="tarjetas">
-            <div class="titular">
+            <div class="tarjetas__titular">
                 <h1>Contacto</h1>
             </div>
-            <div class="informacion contenedor">
+            <div class="tarjetas__info contenedor">
                 <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, dolore!</p>
+                    <p>Si necesitas más información sobre servicios, trabajos o algo en específico
+                    no dudes en consultarme. Completá el formulario haciendo clic en <strong>"Contactame"</strong>
+                    y te estaré respondiendo a la brevedad. Si ya sos cliente, podés dejar tu comentario
+                    acerca de lo que pensás sobre de la atención brindada o si considerás que hay que mejorar algo.</p>
                 </div>
                 <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, dolore!</p>
+                    <p>Además, podés seguirme en mis redes sociales <strong>Facebook</strong> e <strong>Instagram</strong> como <em><strong>"mfarquitectura"</strong></em> y contactarme por ese medio. Vía <strong>WhatsApp</strong> también podés, no dudes en hacerlo. Gracias.</p>
                 </div>
             </div>
         </section>
@@ -122,7 +125,7 @@
         <section>
             <div class="social">
               <h2>Seguime en</h2>
-              <div class="social-link">
+              <div class="social__link">
                 <a href="https://facebook.com"><i class="fab fa-facebook-f"> </i> </a>
                 <a href="https://instagram.com"><i class="fab fa-instagram"> </i> </a>
               </div>
@@ -130,21 +133,21 @@
           </section>
     </main>
 
-    <section class="pie-pagina">
+    <section class="navegacion">
         <div>
             <h3>Navegación</h3>
         </div>
-        <div class="accesos contenedor">
+        <div class="navegacion__accesos contenedor">
             <div>
                 <ul>
-                    <li> <a href="#inicio">Inicio</a> </li>
-                    <li> <a href="#sobre-mi">Sobre mí</a> </li>
+                    <li> <a href="#">Inicio</a> </li>
+                    <li> <a href="views/sobre-mi.html">Sobre mí</a> </li>
                 </ul>
             </div>
             <div>
                 <ul>
-                    <li> <a href="#servicios">Servicios</a> </li>
-                    <li> <a href="#galeria">Galería</a> </li>
+                    <li> <a href="views/servicios.html">Servicios</a> </li>
+                    <li> <a href="views/galeria.html">Galería</a> </li>
                 </ul>
             </div>
             </ul>
@@ -152,7 +155,7 @@
         <div>
             <h3>Contacto</h3>
         </div>
-        <div class="accesos contenedor">
+        <div class="navegacion__accesos contenedor">
             <div>
                 <ul>
                     <li> <a href="https://whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i>11-2233-4455</a> </li>
@@ -167,12 +170,12 @@
             </div>
         </div>
     </section>
-    <footer class="accesos-copy">
+    <footer class="pie-pagina">
             <div>
                 <p> www.mfarquitectura.com.ar &copy;</p>
             </div>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
