@@ -1,0 +1,44 @@
+/* COLORES  */
+/* line 4, ../../Leonel_Divoy_MFArquitectura_Final/scss/contacto.scss */
+section.tarjetas-contacto {
+  border-radius: 5px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  margin-top: 50px;
+  background: #f8f8f8; }
+  /* line 10, ../../Leonel_Divoy_MFArquitectura_Final/scss/contacto.scss */
+  section.tarjetas-contacto .tarjetas-contacto__titular {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Quicksand";
+    text-align: center;
+    background-image: url("../img/marmol-negro1.jpg");
+    height: 50px;
+    padding-top: 5px;
+    color: #ffffff; }
+  /* line 18, ../../Leonel_Divoy_MFArquitectura_Final/scss/contacto.scss */
+  section.tarjetas-contacto .formulario {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    /* line 21, ../../Leonel_Divoy_MFArquitectura_Final/scss/contacto.scss */
+    section.tarjetas-contacto .formulario .formulario__input,
+    section.tarjetas-contacto .formulario .formulario__area,
+    section.tarjetas-contacto .formulario .formulario__submit {
+      display: block;
+      width: 100%;
+      font-family: 'Barlow';
+      font-weight: 200;
+      font-size: 16px;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      padding: 10px; }
+    /* line 35, ../../Leonel_Divoy_MFArquitectura_Final/scss/contacto.scss */
+    section.tarjetas-contacto .formulario .formulario__submit:hover {
+      cursor: pointer;
+      box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+      background: #000000;
+      color: #ffffff; }
+
+/*# sourceMappingURL=contacto.css.map */
