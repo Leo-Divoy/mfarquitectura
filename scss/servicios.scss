@@ -1,0 +1,39 @@
+@import '../scss/variables';
+@import '../scss/mixins';
+
+section.tarjetas-servicios {
+border-radius: 5px;
+box-shadow: 0 4px 4px 0 rgba(123,123,123,.5);
+margin-bottom: 20px;
+margin-top: 50px;
+background: $tarjetas;
+    .tarjetas-servicios__titular {
+    @include h1 (20px, 600, 'Quicksand');
+    text-align: center;
+    background-image: url("../img/marmol-negro1.jpg");
+    height: 50px;
+    padding-top: 5px;
+    color: $titulo;
+    }
+    .tarjetas-servicios__info {
+    display: grid;
+    grid-template-rows: 1fr;
+    row-gap: 20px;
+    padding: 15px 0;
+    text-align: justify;
+    @include p (16px, 400, 'Barlow');
+    }
+    img {
+    width: 100%;
+    box-shadow: 0 4px 4px 0 rgba(123,123,123,.5);
+    }
+    h3 {
+    @include h3 (20px, 600, 'Quicksand');
+    color: $sub;
+    }
+    .fa-chevron-right {
+    margin-right: 15px;
+    font-size: 25px;
+    color: #e4e4e4;
+    }
+}
