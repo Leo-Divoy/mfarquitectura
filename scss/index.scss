@@ -42,11 +42,10 @@ background: $tarjetas;
     }
     .tarjetas__fotos {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
     row-gap: 20px;
-    column-gap: 15px;
     padding: 15px 0;
-        img {
+        img.galeria {
         box-shadow: 0 4px 4px 0 rgba(123,123,123,.5);
         border-radius: 5px;
         width: 100%;
