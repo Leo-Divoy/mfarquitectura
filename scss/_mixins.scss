@@ -1,0 +1,23 @@
+@mixin h1 ($size, $weight, $family) {
+font-size: $size;
+font-weight: $weight;
+font-family: $family;
+}
+
+@mixin h2 ($size, $weight, $family) {
+font-size: $size;
+font-weight: $weight;
+font-family: $family;
+}
+
+@mixin h3 ($size, $weight, $family) {
+font-size: $size;
+font-weight: $weight;
+font-family: $family;
+}
+
+@mixin p ($size, $weight, $family) {
+font-size: $size;
+font-weight: $weight;
+font-family: $family;
+}
