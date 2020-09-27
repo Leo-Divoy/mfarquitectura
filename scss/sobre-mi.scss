@@ -1,0 +1,30 @@
+@import '../scss/variables';
+@import '../scss/mixins';
+
+section.tarjetas-sobreMi {
+border-radius: 5px;
+box-shadow: 0 4px 4px 0 rgba(123,123,123,.5);
+margin-bottom: 20px;
+margin-top: 50px;
+background: $tarjetas;
+    .tarjetas-sobreMi__titular {
+    @include h1 (20px, 600, 'Quicksand');
+    text-align: center;
+    background-image: url("../img/marmol-negro1.jpg");
+    height: 50px;
+    padding-top: 5px;
+    color: $titulo;
+    }
+    .tarjetas-sobreMi__info {
+    display: grid;
+    grid-template-rows: 1fr;
+    row-gap: 20px;
+    padding: 15px 0;
+    text-align: justify;
+    @include p (16px, 400, 'Barlow');
+    }
+    img {
+    width: 100%;
+    box-shadow: 0 4px 4px 0 rgba(123,123,123,.5);
+    }
+}
