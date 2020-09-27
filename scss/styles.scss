@@ -1,0 +1,92 @@
+@import '../scss/mixins';
+@import '../scss/variables';
+@import '../scss/index.scss';
+@import '../scss/menu.scss';
+@import '../scss/sobre-mi.scss';
+@import '../scss/servicios.scss';
+@import '../scss/galeria.scss';
+@import '../scss/contacto.scss';
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+body {font-family: 'Barlow', sans-serif;}
+.contenedor { width: 90%; margin: auto;}
+.fondo { background-image: url(../img/marmol-blanco.jpg); background-repeat: no-repeat; background-size: cover;}
+main {
+    section {
+        .social {
+        margin: 50px;
+            h2 {
+            @include h2 (30px, 600, 'Quicksand');
+            text-align: center;
+            margin-bottom: 20px;
+            color: $sub;
+            }
+            .social__link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+                a {
+                margin: 0 30px;
+                    i {
+                    font-size: 30px;
+                    color: $iconos;
+                    }
+                    .fa-facebook-f:hover {
+                    color: $hover-fb;
+                    }
+                    .fa-instagram:hover {
+                    color: $hover-ig;
+                    }
+                }
+            }
+        }
+    }
+}
+
+section.navegacion {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background: $bg-navegacion;
+height: 250px;
+margin-top: 30px;
+    h3 {
+    @include h3 (16px, 600, 'Quicksand');
+    color: $h3-navegacion;
+    padding-top: 15px;
+    }
+    .navegacion__accesos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 100px;
+    justify-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+        li {
+        list-style: none;
+        display: block;
+            a {
+            text-decoration: none;
+            color: $txt-navegacion;
+            line-height: 2;
+                i {
+                font-size: 20px;
+                margin-right: 10px;
+                }
+            }
+            a:hover {
+            border-bottom: #ffffff solid 2px;
+            }
+        }
+    }
+}
+
+footer.pie-pagina {
+text-align: center;
+color: $txt-footer;
+font-size: 18px;
+padding-top: 5px;
+background: $bg-footer;
+height: 35px;
+}
