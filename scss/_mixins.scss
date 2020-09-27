@@ -21,3 +21,9 @@ font-size: $size;
 font-weight: $weight;
 font-family: $family;
 }
+
+@mixin a ($size, $weight, $family) {
+font-size: $size;
+font-weight: $weight;
+font-family: $family;   
+}
