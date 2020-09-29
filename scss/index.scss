@@ -2,7 +2,7 @@
 @import '../scss/mixins';
 
 section.portada {
-background-image: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0, 0, 0, 0.973) 100%), url(../img/marmol-negro1.jpg);
+background-image: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0, 0, 0, 0.973) 100%), url("../img/marmol-negro1.jpg");
 display: flex;
 width: 100%;
 justify-content: center;
@@ -11,32 +11,40 @@ height: 300px;
 background-size: cover;
 margin-bottom: 30px;
     img {
-    width: 45%;
+    width: 250px;
+    margin-top: 30px;
     }
 }
 section.tarjetas {
-border-radius: 5px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
 box-shadow: 0 4px 4px 0 rgba(123,123,123,.5);
 margin-bottom: 20px;
 margin-top: 50px;
 background: $tarjetas;
+    a {
+    text-decoration: none;
+    color: #000000;
+    }
     .tarjetas__titular {
-    @include h1 (20px, 600, 'Quicksand');
+    @include h1 (1.25rem, 600, 'Quicksand');
     text-align: center;
     background-image: url("../img/marmol-negro1.jpg");
     height: 50px;
-    padding-top: 5px;
     color: $titulo;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     }
     .tarjetas__info {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    row-gap: 20px;
-    padding: 15px 0;
+    row-gap: 10px;
+    margin-top: 5px;
+    padding-top: 10px;
     text-align: justify;
-    @include p (16px, 400, 'Barlow');
+    @include p (1rem, 400, 'Barlow');
         h3 {
-        @include h3 (20px, 600, 'Quicksand');
+        @include h3 (1.25rem, 600, 'Quicksand');
         color: $sub;
         }
     }
@@ -58,21 +66,156 @@ background: $tarjetas;
     .fa-lightbulb {
     color: $idea;
     margin-right: 15px;
-    font-size: 25px;
+    font-size: 1.6rem;
     }
     .fa-pencil-ruler {
     color: $diseno;
     margin-right: 15px;
-    font-size: 25px;
+    font-size: 1.6rem;
     }
     .fa-ruler-combined {
     color: $precision;
     margin-right: 15px;
-    font-size: 25px;
+    font-size: 1.6rem;
     }
     .fa-heart {
     color: $satisfaccion;
     margin-right: 15px;
-    font-size: 25px;
+    font-size: 1.6rem;
+    }
+    .boton {
+    border-radius: 15px;
+    text-align: center;
+    width: 120px;
+    height: 30px;
+    margin-bottom: 15px;
+    padding-top: 3px;
+    background: #929292;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.5);
+        a {
+        text-decoration: none;
+        color: #ffffff;
+        }
+    }
+    .boton:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,.5);
+    background: #000000;
+        a {color: #ffffff;}
+    }
+    .centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+}
+/* ---------------------------------------------------------- */
+
+/* -------------------- MEDIA QUERIES -------------------- */
+@media screen and (min-width: 992px) {
+    section.portada {
+    height: 500px;
+        img {
+        width: 350px;
+        }
+    }
+    section.tarjetas {
+        a {
+        text-decoration: none;
+        color: #000000;
+        }
+        .tarjetas__info {
+        padding-top: 15px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    section.portada {
+    height: 636px;
+        img {
+        width: 400px;
+        }
+    }
+    section.tarjetas {
+    cursor: pointer;
+        a {
+        text-decoration: none;
+        color: #000000;
+        }
+        .tarjetas__titular {
+        @include h1 (3rem, 600, 'Quicksand');
+        height: 80px;
+        padding-top: 15px;
+        }
+        .tarjetas__info {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        padding-top: 15px;
+        }
+        .tarjetas__fotos {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        }
+        .centrar, .boton {
+        display: none;
+        }
+    }
+    #about {
+    height: 250px;
+    }
+    #contacto {
+    height: 230px;
+    }
+    #about:hover {
+    transform: scale(1.1);
+    transition: all .8s ease;
+    }
+    #servicios:hover {
+    transform: scale(1.1);
+    transition: all .8s ease;
+    }
+    #contacto:hover {
+    transform: scale(1.1);
+    transition: all .8s ease;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    section.portada {
+    height: 636px;
+        img {
+        width: 400px;
+        }
+    }
+    section.tarjetas {
+    cursor: pointer;
+        a {
+        text-decoration: none;
+        color: #000000;
+        }
+        .tarjetas__titular {
+        @include h1 (3rem, 600, 'Quicksand');
+        height: 80px;
+        padding-top: 15px;
+        }
+        .tarjetas__info {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        padding-top: 15px;
+        }
+        .tarjetas__fotos {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        }
+        .centrar, .boton {
+        display: none;
+        }
+    }
+    #about {
+    height: 230px;
+    }
+    #contacto {
+    height: 230px;
     }
 }
