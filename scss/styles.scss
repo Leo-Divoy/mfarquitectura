@@ -1,92 +1,124 @@
 @import '../scss/mixins';
 @import '../scss/variables';
 @import '../scss/index.scss';
-@import '../scss/menu.scss';
 @import '../scss/sobre-mi.scss';
 @import '../scss/servicios.scss';
 @import '../scss/galeria.scss';
 @import '../scss/contacto.scss';
 
-* {margin: 0; padding: 0; box-sizing: border-box;}
-body {font-family: 'Barlow', sans-serif;}
-.contenedor { width: 90%; margin: auto;}
-.fondo { background-image: url(../img/marmol-blanco.jpg); background-repeat: no-repeat; background-size: cover;}
-main {
-    section {
-        .social {
-        margin: 50px;
-            h2 {
-            @include h2 (30px, 600, 'Quicksand');
-            text-align: center;
-            margin-bottom: 20px;
-            color: $sub;
-            }
-            .social__link {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-                a {
-                margin: 0 30px;
-                    i {
-                    font-size: 30px;
-                    color: $iconos;
-                    }
-                    .fa-facebook-f:hover {
-                    color: $hover-fb;
-                    }
-                    .fa-instagram:hover {
-                    color: $hover-ig;
-                    }
-                }
-            }
-        }
-    }
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
-section.navegacion {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-background: $bg-navegacion;
-height: 250px;
-margin-top: 30px;
-    h3 {
-    @include h3 (16px, 600, 'Quicksand');
-    color: $h3-navegacion;
-    padding-top: 15px;
+.contenedor {
+width: 90%; 
+margin: auto; 
+max-width: 1000px;
+}
+/* ---------------------------------------- */
+
+/* ---------------- BODY ---------------- */
+body.fondo {
+font-family: 'Barlow', sans-serif;
+background-image: url("../img/marmol-blanco.jpg"); 
+background-repeat: no-repeat; 
+background-size: cover;
+}
+/* ---------------------------------------- */
+
+/* ---------------- MENÚ ---------------- */
+.negro {
+background: rgb(0, 0, 0);
+    .logo {
+    width: 40px;
     }
-    .navegacion__accesos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 100px;
-    justify-items: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-        li {
-        list-style: none;
-        display: block;
-            a {
-            text-decoration: none;
-            color: $txt-navegacion;
-            line-height: 2;
-                i {
-                font-size: 20px;
-                margin-right: 10px;
-                }
-            }
-            a:hover {
-            border-bottom: #ffffff solid 2px;
-            }
-        }
+    .nav-item:hover {
+    background: $hover-enlaces;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    }
+    .nav-link {
+    color: $enlaces;
+    @include a(1rem, 200, 'Barlow');
+    text-align: center;
+    }
+    .active {
+    background: $activo-menu;
     }
 }
+    /* AL HACER SCROLL */
+.top-nav-collapse {
+background: rgba(131, 131, 131, 0.9);
+}
+/* ---------------------------------------- */
 
-footer.pie-pagina {
+/* ----------- ACCESOS RÁPIDOS ----------- */
+section.accesos-rapidos {
+text-align: center;
+background: #2b2b2b;
+color: #ffffff;
+height: 220px;
+padding-top: 15px;
+margin-top: 50px;
+font-family: 'Quicksand';
+    h4 {
+    padding-top: 10px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    }
+    .accesos-rapidos__links {
+    padding-top: 10px;
+    padding-bottom: 15px;
+        a {
+        padding-right: 10px;
+        text-decoration: none;
+        color: #ffffff;
+        }
+        i {
+        padding-right: 5px;
+        }
+    }
+    .accesos-rapidos__links--sociales i {
+    font-size: 1.7rem;
+    padding-right: 20px;
+    padding-top: 10px;
+    color: #ffffff;
+    margin: auto;
+    }
+}
+/* ---------------------------------------- */
+
+/* --------------- FOOTER --------------- */
+footer.footer-copyrigh {
 text-align: center;
 color: $txt-footer;
-font-size: 18px;
-padding-top: 5px;
+@include p(1rem, 200, 'Barlow');
 background: $bg-footer;
-height: 35px;
+height: 40px;
+padding-top: 8px;
+margin-bottom: 15px;
+box-shadow: 0 4px 4px 0 rgba(0,0,0,.5);
+}
+/* ---------------------------------------- */
+
+/* ----------- MEDIA QUERIES ----------- */
+@media screen and (min-width: 992px) {
+    .accesos-rapidos__links a {
+    margin-right: 50px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .accesos-rapidos__links a:hover{
+    cursor: pointer;
+    border-bottom: #ffffff solid 2px;
+    }
+    .accesos-rapidos__links--sociales {
+        .fa-facebook-f:hover {color: $hover-fb;}
+        .fa-instagram:hover {color: $hover-ig;}
+        .fa-whatsapp:hover {color: $hover-ws;}
+        .fa-envelope:hover {color: $hover-gm;}
+    }
 }
