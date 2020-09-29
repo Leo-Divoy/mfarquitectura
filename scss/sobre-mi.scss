@@ -2,29 +2,74 @@
 @import '../scss/mixins';
 
 section.tarjetas-sobreMi {
-border-radius: 5px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
 box-shadow: 0 4px 4px 0 rgba(123,123,123,.5);
-margin-bottom: 20px;
 margin-top: 50px;
 background: $tarjetas;
-    .tarjetas-sobreMi__titular {
-    @include h1 (20px, 600, 'Quicksand');
+    .tarjetas__titular {
+    @include h1 (1.25rem, 600, 'Quicksand');
     text-align: center;
     background-image: url("../img/marmol-negro1.jpg");
     height: 50px;
-    padding-top: 5px;
+    margin-top: 100px;
     color: $titulo;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     }
     .tarjetas-sobreMi__info {
     display: grid;
     grid-template-rows: 1fr;
-    row-gap: 20px;
-    padding: 15px 0;
+    row-gap: 10px;
+    padding-top: 10px;
     text-align: justify;
     @include p (16px, 400, 'Barlow');
     }
     img {
     width: 100%;
     box-shadow: 0 4px 4px 0 rgba(123,123,123,.5);
+    margin-bottom: 15px;
+    }
+}
+/* ---------------------------------------------------------- */
+
+/* -------------------- MEDIA QUERIES -------------------- */
+@media screen and (min-width: 992px) {
+    section.tarjetas-sobreMi {
+        .tarjetas-sobreMi__info {
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 20px;
+            img {
+            height: 98%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    section.tarjetas-sobreMi {
+        .tarjetas__titular {
+        @include h1 (3rem, 600, 'Quicksand');
+        height: 80px;
+        padding-top: 15px;
+        }
+        .tarjetas-sobreMi__info {
+        column-gap: 20px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    section.tarjetas-sobreMi {
+        .tarjetas__titular {
+        @include h1 (3rem, 600, 'Quicksand');
+        height: 80px;
+        padding-top: 15px;
+        }
+        .tarjetas-sobreMi__info {
+        column-gap: 20px;
+        }
     }
 }
