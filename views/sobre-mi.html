@@ -1,145 +1,136 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Conocerme para saber cómo soy y cómo me gusta trabajar es un punto que afianza la relación con el cliente">
-    <meta name="keywords" content="Arquitectura, Diseño, Satisfacción, Interiorismo, Modelado 2D, Modelado 3D, Proyectos, Ideas, Constultas, Servicios, Construcción, Documentación, Obra, Dirección de obra.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- GOOGLE FONTS - BARLOW & QUICKSAND -->
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;400&family=Quicksand:wght@600&display=swap" rel="stylesheet"> 
-    <!-- ICONS FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <!-- SCSS/CSS STYLES -->
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>MF Arquitectura - Martina Fico</title>
-</head>
-<body>
-    <header>
-        <div class="boton-menu">
-            <i class="fas fa-bars fa-2x"></i>
-        </div>
-        <section class="portada">
-            <img src="" alt="logo">
-        </section>
-        <div class="contenedor">
-            <nav class="nav-main"> 
-                <img src="" alt="" class="nav-main__brand">
-                <ul class="nav-main__menu">
-                    <li> <a href="../index.html">Inicio</a> </li>
-                    <li> <a href="../views/sobre-mi.html">Sobre mí</a>
-                    </li> <li> <a href="../views/servicios.html">Servicios</a> </li>
-                    <li> <a href="../views/galeria.html">Galería</a> </li>
-                    <li> <a href="../views/contacto.html">Contacto</a> </li>
-                    <div class="nav-social">
-                        <a href="https://facebook.com"> <i class="fab fa-facebook-f"></i> </a>
-                        <a href="https://instagram.com"> <i class="fab fa-instagram"></i> </a>
-                        <a href=http://gmail.com"> <i class="far fa-envelope"></i> </a>
-                        <a href="https://whatsapp.com"> <i class="fab fa-whatsapp"></i> </a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Conocerme para saber cómo soy y cómo me gusta trabajar es un punto que afianza la relación con el cliente">
+        <meta name="keywords" content="Arquitectura, Diseño, Satisfacción, Interiorismo, Modelado 2D, Modelado 3D, Proyectos, Ideas, Constultas, Servicios, Construcción, Documentación, Obra, Dirección de obra.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- GOOGLE FONTS - BARLOW & QUICKSAND -->
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;400&family=Quicksand:wght@600&display=swap" rel="stylesheet"> 
+        <!-- ICONS FONT AWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <!-- MATERIAL DESIGN - BOOTSTRAP -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <!-- EFECTOS SCROLL -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- SCSS/CSS STYLES -->
+        <link rel="stylesheet" href="../css/styles.css">
+        <title>MF Arquitectura - Martina Fico</title>
+    </head>
+    <body class="fondo">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark negro scrolling-navbar fixed-top">
+                <div class="container">
+                    <a href="../index.html"><img src="../img/logo.png" class="logo"></img></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html"><i class="fas fa-home"></i>Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../views/sobre-mi.html"><i class="fas fa-address-card"></i>Sobre mí</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../views/servicios.html"><i class="fas fa-briefcase"></i>Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../views/galeria.html"><i class="fas fa-camera"></i>Galería</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../views/contacto.html"><i class="fas fa-envelope"></i>Contacto</a>
+                            </li>
+                        </ul>
                     </div>
-                </ul>
+                </div>
             </nav>
-        </div>
-    </header>
+        </header>
 
-    <main class="contenedor">
-        <section class="tarjetas-sobreMi">
-            <div class="tarjetas-sobreMi__titular">
-                <h1>Martina Fico</h1>
-            </div>
-            <div class="tarjetas-sobreMi__info contenedor">
-                <div>
-                    <img src="https://picsum.photos/200" alt="">
+        <main class="contenedor">
+            <section class="tarjetas-sobreMi" data-aos="fade-right" data-aos-duration="1000">
+                <div class="tarjetas__titular">
+                    <h1>Martina Fico</h1>
                 </div>
-                <div>
-                    <p>Nací en Argentina, soy de Géminis y desde chica me encantaba construir cosas y ayudar. Me divertía mucho y emocionaba cada vez que armaba una casa con maderitas o con lo que encontraba. Armaba y desarmaba todo el tiempo. Desde ese entonces supe que eso era lo que quería ser, quería volver realidad lo que de niña hacía y tanto disfrutaba.<br>
-                    Soy egresada de la Universidad de Buenos Aires - FADU, en 2019. Una carrera larga, laboriosa pero realizada con amor, con pasión, porque era lo que deseaba. Además me especialicé en Diseño del Espacio Interior, también en FADU. Un perfecto complemento para la arquitectura. No sólo diseñar el exterior, sino también el interior de la arquitectura.<br>
-                    Me considero una persona entusiasta, activa, responsable, optimista, creativa y organizada. Cuento con ánimos de superarme día a día con cada proyecto que realizo y que tengo acargo. Entiendo los deseos de los clientes y sus ganas de poder cumplir sus sueños, por eso me esfuerzo al máximo para poder lograr que lo consigan. Su satisfacción es mi satisfacción.<br>
-                    Cada nuevo proyecto es un desafío, y cada nuevo desafío es una nueva enseñanza. Siempre hay cosas por mejorar y otras nuevas por descubrir, por eso amo lo que hago.<br>
-                    Para mí la arquitectura lo es todo.</p>
+                <div class="tarjetas-sobreMi__info contenedor">
+                    <div>
+                        <img src="../img/sobre-mi.jpeg" alt="Martina Fico">
+                    </div>
+                    <div>
+                        <p>Nací en Argentina, soy de Géminis y desde chica me encantaba construir cosas y ayudar. Me divertía mucho y emocionaba cada vez que armaba una casa con maderitas o con lo que encontraba. Armaba y desarmaba todo el tiempo. Desde ese entonces supe que eso era lo que quería ser, quería volver realidad lo que de niña hacía y tanto disfrutaba.</br>
+                    
+                        <br>Soy egresada de la Universidad de Buenos Aires - FADU, en 2019. Una carrera larga, laboriosa pero realizada con amor, con pasión, porque era lo que deseaba. Además me especialicé en Diseño del Espacio Interior, también en FADU. Un perfecto complemento para la arquitectura. No sólo diseñar el exterior, sino también el interior de la arquitectura.</br>
+                        
+                        <br>Me considero una persona entusiasta, activa, responsable, optimista, creativa y organizada. Cuento con ánimos de superarme día a día con cada proyecto que realizo y que tengo acargo. Entiendo los deseos de los clientes y sus ganas de poder cumplir sus sueños, por eso me esfuerzo al máximo para poder lograr que lo consigan. Su satisfacción es mi satisfacción.</br>
+                    
+                        <br>Cada nuevo proyecto es un desafío, y cada nuevo desafío es una nueva enseñanza. Siempre hay cosas por mejorar y otras nuevas por descubrir, por eso amo lo que hago.
+                        Para mí la arquitectura lo es todo.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tarjetas-sobreMi" data-aos="fade-left" data-aos-duration="1000">
+                <div class="tarjetas-sobreMi__info contenedor">
+                    <div>
+                        <p>Me encantan los viajes, amo viajar y conocer distintas partes del mundo, ver sus arquitecturas, sacar fotos del paisaje, aprendiendo siempre cosas nuevas en este maravilloso mundo de la arquitectura. Ver fotografías de distintas arquitecturas del mundo me inspira a realizar mi trabajo, descubir nuevos mundos, entender el porqué de cada arquitectura.</br>
+                    
+                        <br>A todos lados donde voy, llevo mi cámara y me guardo esos recuerdos y paisajes. Para muchos pueden ser simples fotos de paisajes o edificios, para mí son arquitectura, son esa pasión que tanto amo desde hace mucho. <em>Disfrutar el momento, divertirse, reir, vivir el presente.</em></p>
+                    </div>
+                    <div>
+                        <img src="../img/viaje.jpg" alt="viajes">
+                    </div>
+                </div>
+            </section>
+
+            <section class="tarjetas-sobreMi" data-aos="fade-up" data-aos-duration="1000">
+                <div class="tarjetas-sobreMi__info contenedor">
+                    <div>
+                        <img src="../img/aquitectura.jpg" alt="arquitectura">
+                    </div>
+                    <div>
+                        <p>Hago de la arquitectura un medio a tu alcance, haciendo que cada proyecto, por más pequeño que sea, logre su objetivo, buscando información sobre nuevos productos, materiales, herramientas y las últimas tecnologías de diseño y construcción.</br>
+                    
+                        <br>El estudio trabaja principalmente en proyectos en los campos de la arquitectura y el urbanismo, pero interviene también en las áreas del interiorismo, el paisajismo.
+                        "Simple pero diferente" es el lema que caracteriza la práctica del estudio que se distingue por su gran sensibilidad hacia el entorno, el lenguaje atento y funcional y la gran atención a las necesidades y expectativas del cliente.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <section class="accesos-rapidos">
+            <div class="contenedor">
+                <h4>Menú</h4>
+                <div class="accesos-rapidos__links">
+                    <a href="../index.html"><i class="fas fa-home"></i>Inicio</a>
+                    <a href="../views/sobre-mi.html"><i class="fas fa-address-card"></i>Sobre mí</a>
+                    <a href="../views/servicios.html"><i class="fas fa-briefcase"></i>Servicios</a>
+                    <a href="../views/galeria.html"><i class="fas fa-camera"></i>Galería</a>
+                    <a href="../views/contacto.html"><i class="fas fa-envelope"></i>Contacto</a>
+                </div>
+                <h4>Contacto</h4>
+                <div class="accesos-rapidos__links--sociales">
+                    <a href="http://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="http://instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="http://whatsapp.com"><i class="fab fa-whatsapp"></i></a>
+                    <a href="http://gmail.com"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
         </section>
+        <footer class="footer-copyrigh">
+            <p>2020 Todos los derechos reservados - mfarquitectura.com.ar &copy;</p>   
+        </footer>
 
-        <section class="tarjetas-sobreMi">
-            <div class="tarjetas-sobreMi__info contenedor">
-                <div>
-                    <p>Me encantan los viajes, amo viajar y conocer distintas partesdel mundo, ver sus arquitecturas, sacar fotos del paisaje, aprendiendo siempre cosas nuevas en este maravilloso mundode la arquitectura. Ver fotografías de distintas arquitecturas del mundo me inspira a realizar mi trabajo, descubir nuevos mundos, entender el porqué de cada arquitectura. <br>
-                    A todos lados donde voy, llevo mi cámara y me guardo esos recuerdos y paisajes del mundo. Para muchos pueden ser simples fotos de paisajes o edificios, para mí son arquitectura, son esa pasión que tanto amo desde hace mucho.<br>
-                    Disfrutar el momento, divertirse, reir, vivir el presente.</p>
-                </div>
-                <div>
-                    <img src="https://picsum.photos/200" alt="">
-                </div>
-            </div>
-        </section>
-
-        <section class="tarjetas-sobreMi">
-            <div class="tarjetas-sobreMi__info contenedor">
-                <div>
-                    <img src="https://picsum.photos/200" alt="">
-                </div>
-                <div>
-                    <p>Hago de la arquitectura un medio a tu alcance, haciendo que cada proyecto, por más pequeño que sea, logre su objetivo, buscando información sobre nuevos productos, materiales,herramientas y las últimas tecnologías de diseño y construcción.<br>
-                    El estudio trabaja principalmente en proyectos en los campos de la arquitectura y el urbanismo, pero interviene también en las áreas del interiorismo, el paisajismo.
-                    "Simple pero diferente" es el lema que caracteriza la práctica del estudio que se distingue por su gran sensibilidad hacia el entorno, el lenguaje atento y funcional y la gran atención a las necesidades y expectativas del cliente.</p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="social">
-              <h2>Seguime en</h2>
-              <div class="social__link">
-                <a href="https://facebook.com"><i class="fab fa-facebook-f"> </i> </a>
-                <a href="https://instagram.com"><i class="fab fa-instagram"> </i> </a>
-              </div>
-            </div>
-          </section>
-    </main>
-
-    <section class="navegacion">
-        <div>
-            <h3>Navegación</h3>
-        </div>
-        <div class="navegacion__accesos contenedor">
-            <div>
-                <ul>
-                    <li> <a href="../index.html">Inicio</a> </li>
-                    <li> <a href="../views/sobre-mi.html">Sobre mí</a> </li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li> <a href="../views/servicios.html">Servicios</a> </li>
-                    <li> <a href="../views/galeria.html">Galería</a> </li>
-                </ul>
-            </div>
-            </ul>
-        </div>
-        <div>
-            <h3>Contacto</h3>
-        </div>
-        <div class="navegacion__accesos contenedor">
-            <div>
-                <ul>
-                    <li> <a href="https://whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i>11-2233-4455</a> </li>
-                    <li> <a href="http://gmail.com"><i class="far fa-envelope"></i>mfa@info.com.ar</a> </li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li> <a href="https://facebook.com"> <i class="fab fa-facebook-f"></i>mfarquitectura</a> </li>
-                    <li> <a href="https://instagram.com"><i class="fab fa-instagram"></i>mfarquitectura</a> </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <footer class="pie-pagina">
-            <div>
-                <p> www.mfarquitectura.com.ar &copy;</p>
-            </div>
-    </footer>
-
-    <script src="../js/main.js"></script>
-</body>
+        <!-- -------------------------------------- SCRIPTS JS ---------------------------------------------------- -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
+    </body>
 </html>
