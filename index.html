@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="description" content="MF Arquitectura, el sitio donde sus ideas y sueños dejan de ser bocetos y comienzan a ser realidad. Satisfacción garantizada.">
     <meta name="keywords" content="Arquitectura, Diseño, Satisfacción, Interiorismo, Modelado 2D, Modelado 3D, Proyectos, Ideas, Constultas.">
@@ -9,169 +9,183 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;400&family=Quicksand:wght@600&display=swap" rel="stylesheet"> 
     <!-- ICONS FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!-- MATERIAL DESIGN - BOOTSTRAP -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- SCSS/CSS STYLES -->
     <link rel="stylesheet" href="css/styles.css">
     <title>MF Arquitectura - Inicio</title>
-</head>
-<body class="fondo">
-    <header>
-        <div class="boton-menu">
-            <i class="fas fa-bars fa-2x"></i>
-        </div>
+    </head>
+
+    <body class="fondo">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark negro scrolling-navbar fixed-top">
+                <div class="container">
+                    <img src="img/logo.png" class="logo" href="index.html"></img>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#"><i class="fas fa-home"></i>Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-address-card"></i>Sobre mí</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-briefcase"></i>Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-camera"></i>Galería</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-envelope"></i>Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+              </nav>
+        </header>
+
         <section class="portada">
             <img src="img/logo-principal.png" alt="logo">
         </section>
-        <div class="contenedor">
-            <nav class="nav-main"> 
-                <ul class="nav-main__menu">
-                    <li> <a href="index.html">Inicio</a> </li>
-                    <li> <a href="views/sobre-mi.html">Sobre mí</a> </li> 
-                    <li> <a href="views/servicios.html">Servicios</a> </li>
-                    <li> <a href="views/galeria.html">Galería</a> </li>
-                    <li> <a href="views/contacto.html">Contacto</a> </li>
-                    <div class="nav-social">
-                        <a href="https://facebook.com"> <i class="fab fa-facebook-f"></i> </a>
-                        <a href="https://instagram.com"> <i class="fab fa-instagram"></i> </a>
-                        <a href="http://gmail.com"> <i class="far fa-envelope"></i> </a>
-                        <a href="https://whatsapp.com"> <i class="fab fa-whatsapp"></i> </a>
+
+        <main class="contenedor">
+            <a href="views/sobre-mi.html"><section class="tarjetas" id="about">
+                <div class="tarjetas__titular">
+                    <h1>Martina Fico</h1>
+                </div>
+                <div class="tarjetas__info contenedor">
+                    <div>
+                        <p>Soy egresada de la Universidad de Buenos Aires - FADU, en 2019.
+                        Además me especialicé en Diseño del Espacio Interior, también en FADU.
+                        Me considero una persona entusiasta, activa, responsable, optimista, creativa y organizada.</p>
                     </div>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main class="contenedor">
-        <section class="tarjetas">
-            <div class="tarjetas__titular">
-                <h1>Martina Fico</h1>
-            </div>
-            <div class="tarjetas__info contenedor">
-                <div>
-                    <p>Soy egresada de la Universidad de Buenos Aires - FADU, en 2019.
-                    Además me especialicé en Diseño del Espacio Interior, también en FADU.
-                    Me considero una persona entusiasta, activa, responsable, optimista, creativa y organizada.</p>
+                    <div>
+                        <p>Me encantan los viajes, amo viajar y conocer distintas partes del mundo, ver sus arquitecturas,
+                        sacar fotos del paisaje, aprendiendo siempre cosas nuevas en este maravilloso mundo de la arquitectura.</p>
+                    </div>
                 </div>
-                <div>
-                    <p>Me encantan los viajes, amo viajar y conocer distintas partes del mundo, ver sus arquitecturas,
-                    sacar fotos del paisaje, aprendiendo siempre cosas nuevas en este maravilloso mundo de la arquitectura.</p>
+                <div class="centrar">
+                    <div class="boton">
+                        <a href="views/sobre-mi.html">Más sobre mí</a>
+                    </div>
+                </div>
+            </section></a>
+
+            <a href="views/servicios.html"><section class="tarjetas" id="servicios">
+                <div class="tarjetas__titular">
+                    <h1>Servicios</h1>
+                </div>
+                <div class="tarjetas__info contenedor">
+                    <div>
+                        <h3><i class="fas fa-lightbulb"></i>Idea</h3>
+                        <p>Traigo ideas a la vida. Ese es mi principal objetivo y mi visión, por lo que hago todo lo posible para imaginar profundamente su idea.</p>
+                    </div>
+                    <div>
+                        <h3><i class="fas fa-pencil-ruler"></i>Diseño</h3>
+                        <p>El proceso de diseño se adapta a sus necesidades, involucra varias etapas, desde bocetos iniciales y modelado en 2D y 3D.</p>
+                    </div>
+                    <div>
+                        <h3><i class="fas fa-ruler-combined"></i>Precisión</h3>
+                        <p>Usted lo necesita y yo me ocupo de hacer realidad sus sueños.</p>
+                    </div>
+                    <div>
+                        <h3><i class="fas fa-heart"></i>Satisfacción</h3>
+                        <p>Tu opinión y satisfacción son importantes en todo el proceso. Desde la primera línea dibujada, hasta la última.</p>
+                    </div>
+                </div>
+                <div class="centrar">
+                    <div class="boton">
+                        <a href="views/servicios.html">Conocé más</a>
+                    </div>
+                </div>
+            </section></a>
+
+            <a href="views/galeria.html"><section class="tarjetas" id="galeria">
+                <div class="tarjetas__titular">
+                    <h1>Galería</h1>
+                </div>
+                <div class="tarjetas__fotos contenedor">
+                    <div>
+                        <img src="img/3.jpg" alt="proyecto-1" class="galeria">
+                    </div>
+                    <div>
+                        <img src="img/4b.jpg" alt="proyecto-2" class="galeria">
+                    </div>
+                    <div>
+                        <img src="img/7.jpg" alt="proyecto-3" class="galeria">
+                    </div>
+                    <div>
+                        <img src="img/8b.jpg" alt="proyecto-4" class="galeria">
+                    </div>
+                </div>
+                <div class="centrar">
+                    <div class="boton">
+                        <a href="views/galeria.html">Ver todas</a>
+                    </div>
+                </div>
+            </section></a>
+
+            <a href="views/contacto.html"><section class="tarjetas" id="contacto">
+                <div class="tarjetas__titular">
+                    <h1>Contacto</h1>
+                </div>
+                <div class="tarjetas__info contenedor">
+                    <div>
+                        <p>Si necesitas más información sobre servicios, trabajos o algo en específico
+                        no dudes en consultarme. Completá el formulario haciendo clic en <strong>"Contactame"</strong>
+                        y te estaré respondiendo a la brevedad.</p>
+                    </div>
+                    <div>
+                        <p>Además, podés seguirme en mis redes sociales <strong>Facebook</strong> e <strong>Instagram</strong> como <em><strong>"mfarquitectura"</strong></em> y contactarme por ese medio. Vía <strong>WhatsApp</strong> también podés, no dudes en hacerlo. Gracias.</p>
+                    </div>
+                </div>
+                <div class="centrar">
+                    <div class="boton">
+                        <a href="views/contacto.html">Contactame</a>
+                    </div>
+                </div>
+            </section></a>
+        </main>
+
+        <section class="accesos-rapidos">
+            <div class="contenedor">
+                <h4>Menú</h4>
+                <div class="accesos-rapidos__links">
+                    <a href="index.html"><i class="fas fa-home"></i>Inicio</a>
+                    <a href="views/sobre-mi.html"><i class="fas fa-address-card"></i>Sobre mí</a>
+                    <a href="views/servicios.html"><i class="fas fa-briefcase"></i>Servicios</a>
+                    <a href="views/galeria.html"><i class="fas fa-camera"></i>Galería</a>
+                    <a href="views/contacto.html"><i class="fas fa-envelope"></i>Contacto</a>
+                </div>
+                <h4>Contacto</h4>
+                <div class="accesos-rapidos__links--sociales">
+                    <a><i class="fab fa-facebook-f"></i>http://facebook.com</a>
+                    <a><i class="fab fa-instagram"></i>http://instagram.com</a>
+                    <a><i class="fab fa-whatsapp"></i>http://whatsapp.com</a>
+                    <a><i class="fas fa-envelope"></i>http://gmail.com</a>
                 </div>
             </div>
         </section>
+        <footer class="footer-copyrigh">
+            <p>2020 Todos los derechos reservados - mfarquitectura.com.ar &copy;</p>   
+        </footer>
+  
 
-        <section class="tarjetas">
-            <div class="tarjetas__titular">
-                <h1>Servicios</h1>
-            </div>
-            <div class="tarjetas__info contenedor">
-                <div>
-                    <h3><i class="fas fa-lightbulb"></i>Idea</h3>
-                    <p>Traigo ideas a la vida. Ese es mi principal objetivo y mi visión, por lo que hago todo lo posible para imaginar profundamente su idea.</p>
-                </div>
-                <div>
-                    <h3><i class="fas fa-pencil-ruler"></i>Diseño</h3>
-                    <p>El proceso de diseño se adapta a sus necesidades, involucra varias etapas, desde bocetos iniciales y modelado en 2D y 3D.</p>
-                </div>
-                <div>
-                    <h3><i class="fas fa-ruler-combined"></i>Precisión</h3>
-                    <p>Usted lo necesita y yo me ocupo de hacer realidad sus sueños.</p>
-                </div>
-                <div>
-                    <h3><i class="fas fa-heart"></i>Satisfacción</h3>
-                    <p>Tu opinión y satisfacción son importantes en todo el proceso. Desde la primera línea dibujada, hasta la última.</p>
-                </div>
-            </div>
-        </section>
+        
 
-        <section class="tarjetas">
-            <div class="tarjetas__titular">
-                <h1>Galería</h1>
-            </div>
-            <div class="tarjetas__fotos contenedor">
-                <div>
-                    <img src="img/3.jpg" alt="proyecto-1" class="galeria">
-                </div>
-                <div>
-                    <img src="img/4b.jpg" alt="proyecto-2" class="galeria">
-                </div>
-                <div>
-                    <img src="img/7.jpg" alt="proyecto-3" class="galeria">
-                </div>
-                <div>
-                    <img src="img/8b.jpg" alt="proyecto-4" class="galeria">
-                </div>
-            </div>
-        </section>
-
-        <section class="tarjetas">
-            <div class="tarjetas__titular">
-                <h1>Contacto</h1>
-            </div>
-            <div class="tarjetas__info contenedor">
-                <div>
-                    <p>Si necesitas más información sobre servicios, trabajos o algo en específico
-                    no dudes en consultarme. Completá el formulario haciendo clic en <strong>"Contactame"</strong>
-                    y te estaré respondiendo a la brevedad.</p>
-                </div>
-                <div>
-                    <p>Además, podés seguirme en mis redes sociales <strong>Facebook</strong> e <strong>Instagram</strong> como <em><strong>"mfarquitectura"</strong></em> y contactarme por ese medio. Vía <strong>WhatsApp</strong> también podés, no dudes en hacerlo. Gracias.</p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="social">
-                <h2>Seguime en</h2>
-                <div class="social__link">
-                    <a href="https://facebook.com"><i class="fab fa-facebook-f"> </i> </a>
-                    <a href="https://instagram.com"><i class="fab fa-instagram"> </i> </a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <section class="navegacion">
-        <div>
-            <h3>Navegación</h3>
-        </div>
-        <div class="navegacion__accesos contenedor">
-            <div>
-                <ul>
-                    <li> <a href="#">Inicio</a> </li>
-                    <li> <a href="views/sobre-mi.html">Sobre mí</a> </li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li> <a href="views/servicios.html">Servicios</a> </li>
-                    <li> <a href="views/galeria.html">Galería</a> </li>
-                </ul>
-            </div>
-        </div>
-        <div>
-            <h3>Contacto</h3>
-        </div>
-        <div class="navegacion__accesos contenedor">
-            <div>
-                <ul>
-                    <li> <a href="https://whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i>11-2233-4455</a> </li>
-                    <li> <a href="http://gmail.com"><i class="far fa-envelope"></i>mfa@info.com.ar</a> </li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li> <a href="https://facebook.com"> <i class="fab fa-facebook-f"></i>mfarquitectura</a> </li>
-                    <li> <a href="https://instagram.com"><i class="fab fa-instagram"></i>mfarquitectura</a> </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <footer class="pie-pagina">
-            <div>
-                <p> www.mfarquitectura.com.ar &copy;</p>
-            </div>
-    </footer>
-
-    <script src="js/main.js"></script>
-</body>
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+        <script src="js/menu.js"></script>
+    </body>
 </html>
