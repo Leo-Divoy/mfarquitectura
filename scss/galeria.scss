@@ -2,18 +2,21 @@
 @import '../scss/mixins';
 
 section.tarjetas-galeria {
-border-radius: 5px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
 box-shadow: 0 4px 4px 0 rgba(0,0,0,.5);
 margin-bottom: 20px;
 margin-top: 50px;
 background: $tarjetas;
-    .tarjetas-galeria__titular {
+    .tarjetas-galeria--titular {
     @include h1 (20px, 600, 'Quicksand');
     text-align: center;
     background-image: url("../img/marmol-negro1.jpg");
     height: 50px;
-    padding-top: 5px;
+    margin-top: 100px;
     color: $titulo;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     }
     .tarjetas__fotos {
     display: grid;
@@ -22,12 +25,9 @@ background: $tarjetas;
     padding: 15px 0;
         img.galeria {
         width: 100%;
-        filter: grayscale(100%);
-        filter: blur(2px);
         }
         img:hover {
         cursor: pointer;
-        filter: none;
         transform: scale(1.1);
         transition: all 3s;
         }
@@ -35,6 +35,29 @@ background: $tarjetas;
         overflow: hidden;
         border-radius: 5px;
         box-shadow: 0 4px 4px 0 rgba(0,0,0,.5);
+        }
+    }
+}
+/* ---------------------------------------------------------- */
+
+/* -------------------- MEDIA QUERIES -------------------- */
+@media screen and (min-width: 1024px) {
+    section.tarjetas-galeria {
+        .tarjetas-galeria--titular {
+        @include h1 (3rem, 600, 'Quicksand');
+        height: 80px;
+        padding-top: 15px;
+        }
+        .tarjetas__fotos {
+            img {
+            filter: grayscale(100%);
+            }
+            img:hover {
+            cursor: pointer;
+            filter: none;
+            transform: scale(1.1);
+            transition: all 3s;
+            }
         }
     }
 }
