@@ -1,8 +1,8 @@
+@charset "UTF-8";
 /* COLORES  */
 /* COLORES  */
-/* line 4, ../../Leonel_Divoy_MFArquitectura_Final/scss/index.scss */
 section.portada {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.973) 100%), url(../img/marmol-negro1.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.973) 100%), url("../img/marmol-negro1.jpg");
   display: flex;
   width: 100%;
   justify-content: center;
@@ -10,214 +10,269 @@ section.portada {
   height: 300px;
   background-size: cover;
   margin-bottom: 30px; }
-  /* line 13, ../../Leonel_Divoy_MFArquitectura_Final/scss/index.scss */
   section.portada img {
-    width: 45%; }
+    width: 250px;
+    margin-top: 30px; }
 
-/* line 17, ../../Leonel_Divoy_MFArquitectura_Final/scss/index.scss */
 section.tarjetas {
-  border-radius: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   box-shadow: 0 4px 4px 0 rgba(123, 123, 123, 0.5);
   margin-bottom: 20px;
   margin-top: 50px;
   background: #f8f8f8; }
-  /* line 23, ../../Leonel_Divoy_MFArquitectura_Final/scss/index.scss */
+  section.tarjetas a {
+    text-decoration: none;
+    color: #000000; }
   section.tarjetas .tarjetas__titular {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
     font-family: "Quicksand";
     text-align: center;
     background-image: url("../img/marmol-negro1.jpg");
     height: 50px;
-    padding-top: 5px;
-    color: #ffffff; }
-  /* line 31, ../../Leonel_Divoy_MFArquitectura_Final/scss/index.scss */
+    color: #ffffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; }
   section.tarjetas .tarjetas__info {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    row-gap: 20px;
-    padding: 15px 0;
+    row-gap: 10px;
+    margin-top: 5px;
+    padding-top: 10px;
     text-align: justify;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     font-family: "Barlow"; }
-    /* line 38, ../../Leonel_Divoy_MFArquitectura_Final/scss/index.scss */
     section.tarjetas .tarjetas__info h3 {
-      font-size: 20px;
+      font-size: 1.25rem;
       font-weight: 600;
       font-family: "Quicksand";
       color: #929292; }
-  /* line 43, ../../Leonel_Divoy_MFArquitectura_Final/scss/index.scss */
   section.tarjetas .tarjetas__fotos {
     display: grid;
     grid-template-rows: 1fr;
     row-gap: 20px;
     padding: 15px 0; }
-    /* line 48, ../../Leonel_Divoy_MFArquitectura_Final/scss/index.scss */
     section.tarjetas .tarjetas__fotos img.galeria {
       box-shadow: 0 4px 4px 0 rgba(123, 123, 123, 0.5);
       border-radius: 5px;
       width: 100%; }
-    /* line 53, ../../Leonel_Divoy_MFArquitectura_Final/scss/index.scss */
     section.tarjetas .tarjetas__fotos img:hover {
       opacity: .5;
       cursor: pointer; }
-  /* line 58, ../../Leonel_Divoy_MFArquitectura_Final/scss/index.scss */
   section.tarjetas .fa-lightbulb {
-    color: #dbc500;
+    color: #e0d996;
     margin-right: 15px;
-    font-size: 25px; }
-  /* line 63, ../../Leonel_Divoy_MFArquitectura_Final/scss/index.scss */
+    font-size: 1.6rem; }
   section.tarjetas .fa-pencil-ruler {
-    color: #03009c;
+    color: #72719e;
     margin-right: 15px;
-    font-size: 25px; }
-  /* line 68, ../../Leonel_Divoy_MFArquitectura_Final/scss/index.scss */
+    font-size: 1.6rem; }
   section.tarjetas .fa-ruler-combined {
-    color: #2e9100;
+    color: #a1bd95;
     margin-right: 15px;
-    font-size: 25px; }
-  /* line 73, ../../Leonel_Divoy_MFArquitectura_Final/scss/index.scss */
+    font-size: 1.6rem; }
   section.tarjetas .fa-heart {
-    color: #cf0000;
+    color: #c79999;
     margin-right: 15px;
-    font-size: 25px; }
-
-/* COLORES  */
-/* line 4, ../../Leonel_Divoy_MFArquitectura_Final/scss/menu.scss */
-.boton-menu {
-  cursor: pointer;
-  position: fixed;
-  top: 15px;
-  right: 30px;
-  z-index: 120;
-  display: block;
-  color: #4d4d4d; }
-
-/* line 13, ../../Leonel_Divoy_MFArquitectura_Final/scss/menu.scss */
-.boton-menu:hover {
-  opacity: 0.5; }
-
-/* line 16, ../../Leonel_Divoy_MFArquitectura_Final/scss/menu.scss */
-.nav-main__menu {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: #000000;
-  width: 100%;
-  height: 100%;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  opacity: 1;
-  padding: 30px;
-  box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.253);
-  transform: translateX(-2000px);
-  transition: transform 0.5s ease-in-out;
-  z-index: 100; }
-  /* line 32, ../../Leonel_Divoy_MFArquitectura_Final/scss/menu.scss */
-  .nav-main__menu a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 200;
-    font-family: "Barlow"; }
-  /* line 37, ../../Leonel_Divoy_MFArquitectura_Final/scss/menu.scss */
-  .nav-main__menu li {
-    padding: 20px;
-    border-bottom: #ccc solid 1px;
-    font-size: 14px;
+    font-size: 1.6rem; }
+  section.tarjetas .boton {
+    border-radius: 15px;
     text-align: center;
-    list-style: none; }
-  /* line 44, ../../Leonel_Divoy_MFArquitectura_Final/scss/menu.scss */
-  .nav-main__menu a:hover {
-    color: #8a8a8a; }
-  /* line 47, ../../Leonel_Divoy_MFArquitectura_Final/scss/menu.scss */
-  .nav-main__menu .activo {
-    font-size: 25px;
-    border-bottom: solid 2px #ffffff; }
+    width: 120px;
+    height: 30px;
+    margin-bottom: 15px;
+    padding-top: 3px;
+    background: #929292;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5); }
+    section.tarjetas .boton a {
+      text-decoration: none;
+      color: #ffffff; }
+  section.tarjetas .boton:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+    background: #000000; }
+    section.tarjetas .boton:hover a {
+      color: #ffffff; }
+  section.tarjetas .centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
-/* line 52, ../../Leonel_Divoy_MFArquitectura_Final/scss/menu.scss */
-.nav-main ul.nav-main__menu.show {
-  transform: translateX(-10px); }
+/* ---------------------------------------------------------- */
+/* -------------------- MEDIA QUERIES -------------------- */
+@media screen and (min-width: 992px) {
+  section.portada {
+    height: 500px; }
+    section.portada img {
+      width: 350px; }
+  section.tarjetas a {
+    text-decoration: none;
+    color: #000000; }
+  section.tarjetas .tarjetas__info {
+    padding-top: 15px; } }
 
-/* line 55, ../../Leonel_Divoy_MFArquitectura_Final/scss/menu.scss */
-.nav-social {
-  margin: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  /* line 60, ../../Leonel_Divoy_MFArquitectura_Final/scss/menu.scss */
-  .nav-social a {
-    margin: 0 15px; }
-  /* line 63, ../../Leonel_Divoy_MFArquitectura_Final/scss/menu.scss */
-  .nav-social i {
-    font-size: 30px; }
-  /* line 66, ../../Leonel_Divoy_MFArquitectura_Final/scss/menu.scss */
-  .nav-social .fa-facebook-f:hover {
-    color: #03009c; }
-  /* line 69, ../../Leonel_Divoy_MFArquitectura_Final/scss/menu.scss */
-  .nav-social .fa-instagram:hover {
-    color: #83003d; }
-  /* line 72, ../../Leonel_Divoy_MFArquitectura_Final/scss/menu.scss */
-  .nav-social .fa-envelope:hover {
-    color: #cf0000; }
-  /* line 75, ../../Leonel_Divoy_MFArquitectura_Final/scss/menu.scss */
-  .nav-social .fa-whatsapp:hover {
-    color: #2e9100; }
+@media screen and (min-width: 1024px) {
+  section.portada {
+    height: 636px; }
+    section.portada img {
+      width: 400px; }
+  section.tarjetas {
+    cursor: pointer; }
+    section.tarjetas a {
+      text-decoration: none;
+      color: #000000; }
+    section.tarjetas .tarjetas__titular {
+      font-size: 3rem;
+      font-weight: 600;
+      font-family: "Quicksand";
+      height: 80px;
+      padding-top: 15px; }
+    section.tarjetas .tarjetas__info {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 20px;
+      padding-top: 15px; }
+    section.tarjetas .tarjetas__fotos {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 20px; }
+    section.tarjetas .centrar, section.tarjetas .boton {
+      display: none; }
+  #about {
+    height: 250px; }
+  #contacto {
+    height: 230px; }
+  #about:hover {
+    transform: scale(1.1);
+    transition: all .8s ease; }
+  #servicios:hover {
+    transform: scale(1.1);
+    transition: all .8s ease; }
+  #contacto:hover {
+    transform: scale(1.1);
+    transition: all .8s ease; } }
+
+@media screen and (min-width: 1200px) {
+  section.portada {
+    height: 636px; }
+    section.portada img {
+      width: 400px; }
+  section.tarjetas {
+    cursor: pointer; }
+    section.tarjetas a {
+      text-decoration: none;
+      color: #000000; }
+    section.tarjetas .tarjetas__titular {
+      font-size: 3rem;
+      font-weight: 600;
+      font-family: "Quicksand";
+      height: 80px;
+      padding-top: 15px; }
+    section.tarjetas .tarjetas__info {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 20px;
+      padding-top: 15px; }
+    section.tarjetas .tarjetas__fotos {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 20px; }
+    section.tarjetas .centrar, section.tarjetas .boton {
+      display: none; }
+  #about {
+    height: 230px; }
+  #contacto {
+    height: 230px; } }
 
 /* COLORES  */
-/* line 4, ../../Leonel_Divoy_MFArquitectura_Final/scss/sobre-mi.scss */
 section.tarjetas-sobreMi {
-  border-radius: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   box-shadow: 0 4px 4px 0 rgba(123, 123, 123, 0.5);
-  margin-bottom: 20px;
   margin-top: 50px;
   background: #f8f8f8; }
-  /* line 10, ../../Leonel_Divoy_MFArquitectura_Final/scss/sobre-mi.scss */
-  section.tarjetas-sobreMi .tarjetas-sobreMi__titular {
-    font-size: 20px;
+  section.tarjetas-sobreMi .tarjetas__titular--about {
+    font-size: 1.25rem;
     font-weight: 600;
     font-family: "Quicksand";
     text-align: center;
     background-image: url("../img/marmol-negro1.jpg");
     height: 50px;
-    padding-top: 5px;
-    color: #ffffff; }
-  /* line 18, ../../Leonel_Divoy_MFArquitectura_Final/scss/sobre-mi.scss */
+    margin-top: 100px;
+    color: #ffffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; }
   section.tarjetas-sobreMi .tarjetas-sobreMi__info {
     display: grid;
     grid-template-rows: 1fr;
-    row-gap: 20px;
-    padding: 15px 0;
+    row-gap: 10px;
+    padding-top: 10px;
     text-align: justify;
     font-size: 16px;
     font-weight: 400;
     font-family: "Barlow"; }
-  /* line 26, ../../Leonel_Divoy_MFArquitectura_Final/scss/sobre-mi.scss */
   section.tarjetas-sobreMi img {
     width: 100%;
-    box-shadow: 0 4px 4px 0 rgba(123, 123, 123, 0.5); }
+    box-shadow: 0 4px 4px 0 rgba(123, 123, 123, 0.5);
+    margin-bottom: 15px; }
+
+/* ---------------------------------------------------------- */
+/* -------------------- MEDIA QUERIES -------------------- */
+@media screen and (min-width: 992px) {
+  section.tarjetas-sobreMi .tarjetas-sobreMi__info {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px; }
+    section.tarjetas-sobreMi .tarjetas-sobreMi__info img {
+      height: 98%;
+      object-fit: cover;
+      margin-bottom: 20px; } }
+
+@media screen and (min-width: 1024px) {
+  section.tarjetas-sobreMi .tarjetas__titular--about {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: "Quicksand";
+    height: 80px;
+    padding-top: 15px; }
+  section.tarjetas-sobreMi .tarjetas-sobreMi__info {
+    column-gap: 20px; } }
+
+@media screen and (min-width: 1200px) {
+  section.tarjetas-sobreMi .tarjetas__titular--about {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: "Quicksand";
+    height: 80px;
+    padding-top: 15px; }
+  section.tarjetas-sobreMi .tarjetas-sobreMi__info {
+    column-gap: 20px; } }
 
 /* COLORES  */
-/* line 4, ../../Leonel_Divoy_MFArquitectura_Final/scss/servicios.scss */
 section.tarjetas-servicios {
-  border-radius: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   box-shadow: 0 4px 4px 0 rgba(123, 123, 123, 0.5);
-  margin-bottom: 20px;
   margin-top: 50px;
   background: #f8f8f8; }
-  /* line 10, ../../Leonel_Divoy_MFArquitectura_Final/scss/servicios.scss */
-  section.tarjetas-servicios .tarjetas-servicios__titular {
+  section.tarjetas-servicios .tarjetas__titular--servicios1 {
     font-size: 20px;
     font-weight: 600;
     font-family: "Quicksand";
     text-align: center;
     background-image: url("../img/marmol-negro1.jpg");
     height: 50px;
-    padding-top: 5px;
-    color: #ffffff; }
-  /* line 18, ../../Leonel_Divoy_MFArquitectura_Final/scss/servicios.scss */
+    margin-top: 100px;
+    color: #ffffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; }
+  section.tarjetas-servicios .tarjetas__titular--servicios {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Quicksand";
+    text-align: center;
+    background-image: url("../img/marmol-negro1.jpg");
+    height: 50px;
+    color: #ffffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; }
   section.tarjetas-servicios .tarjetas-servicios__info {
     display: grid;
     grid-template-rows: 1fr;
@@ -227,72 +282,128 @@ section.tarjetas-servicios {
     font-size: 16px;
     font-weight: 400;
     font-family: "Barlow"; }
-  /* line 26, ../../Leonel_Divoy_MFArquitectura_Final/scss/servicios.scss */
   section.tarjetas-servicios img {
     width: 100%;
     box-shadow: 0 4px 4px 0 rgba(123, 123, 123, 0.5); }
-  /* line 30, ../../Leonel_Divoy_MFArquitectura_Final/scss/servicios.scss */
   section.tarjetas-servicios h3 {
     font-size: 20px;
     font-weight: 600;
     font-family: "Quicksand";
     color: #929292; }
-  /* line 34, ../../Leonel_Divoy_MFArquitectura_Final/scss/servicios.scss */
   section.tarjetas-servicios .fa-chevron-right {
     margin-right: 15px;
     font-size: 25px;
     color: #e4e4e4; }
 
+/* ---------------------------------------------------------- */
+/* -------------------- MEDIA QUERIES -------------------- */
+@media screen and (min-width: 992px) {
+  section.tarjetas-servicios .tarjetas-servicios__info {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px; }
+    section.tarjetas-servicios .tarjetas-servicios__info img {
+      height: 98%;
+      object-fit: cover;
+      margin-bottom: 20px; } }
+
+@media screen and (min-width: 1024px) {
+  section.tarjetas-servicios .tarjetas__titular--servicios1 {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: "Quicksand";
+    height: 80px;
+    padding-top: 15px; }
+  section.tarjetas-servicios .tarjetas__titular--servicios {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: "Quicksand";
+    height: 80px;
+    padding-top: 15px; }
+  section.tarjetas-servicios .tarjetas-servicios__info {
+    column-gap: 20px; } }
+
+@media screen and (min-width: 1200px) {
+  section.tarjetas-servicios {
+    height: 580px; }
+    section.tarjetas-servicios .tarjetas__titular--servicios1 {
+      font-size: 3rem;
+      font-weight: 600;
+      font-family: "Quicksand";
+      height: 80px;
+      padding-top: 15px; }
+    section.tarjetas-servicios .tarjetas__titular--servicios {
+      font-size: 3rem;
+      font-weight: 600;
+      font-family: "Quicksand";
+      height: 80px;
+      padding-top: 15px; }
+    section.tarjetas-servicios .tarjetas-servicios__info {
+      column-gap: 20px; }
+      section.tarjetas-servicios .tarjetas-servicios__info img {
+        height: 80%;
+        object-fit: cover;
+        margin-bottom: 20px; } }
+
 /* COLORES  */
-/* line 4, ../../Leonel_Divoy_MFArquitectura_Final/scss/galeria.scss */
 section.tarjetas-galeria {
-  border-radius: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
   margin-bottom: 20px;
   margin-top: 50px;
   background: #f8f8f8; }
-  /* line 10, ../../Leonel_Divoy_MFArquitectura_Final/scss/galeria.scss */
-  section.tarjetas-galeria .tarjetas-galeria__titular {
+  section.tarjetas-galeria .tarjetas-galeria--titular {
     font-size: 20px;
     font-weight: 600;
     font-family: "Quicksand";
     text-align: center;
     background-image: url("../img/marmol-negro1.jpg");
     height: 50px;
-    padding-top: 5px;
-    color: #ffffff; }
-  /* line 18, ../../Leonel_Divoy_MFArquitectura_Final/scss/galeria.scss */
+    margin-top: 100px;
+    color: #ffffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; }
   section.tarjetas-galeria .tarjetas__fotos {
     display: grid;
     grid-template-rows: 1fr;
     row-gap: 20px;
     padding: 15px 0; }
-    /* line 23, ../../Leonel_Divoy_MFArquitectura_Final/scss/galeria.scss */
     section.tarjetas-galeria .tarjetas__fotos img.galeria {
-      width: 100%;
-      filter: grayscale(100%);
-      filter: blur(2px); }
-    /* line 28, ../../Leonel_Divoy_MFArquitectura_Final/scss/galeria.scss */
+      width: 100%; }
     section.tarjetas-galeria .tarjetas__fotos img:hover {
       cursor: pointer;
-      filter: none;
       transform: scale(1.1);
       transition: all 3s; }
-    /* line 34, ../../Leonel_Divoy_MFArquitectura_Final/scss/galeria.scss */
     section.tarjetas-galeria .tarjetas__fotos .contenedor-fotos {
       overflow: hidden;
       border-radius: 5px;
       box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5); }
 
+/* ---------------------------------------------------------- */
+/* -------------------- MEDIA QUERIES -------------------- */
+@media screen and (min-width: 1024px) {
+  section.tarjetas-galeria .tarjetas-galeria--titular {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: "Quicksand";
+    height: 80px;
+    padding-top: 15px; }
+  section.tarjetas-galeria .tarjetas__fotos img {
+    filter: grayscale(100%); }
+  section.tarjetas-galeria .tarjetas__fotos img:hover {
+    cursor: pointer;
+    filter: none;
+    transform: scale(1.1);
+    transition: all 3s; } }
+
 /* COLORES  */
-/* line 4, ../../Leonel_Divoy_MFArquitectura_Final/scss/contacto.scss */
 section.tarjetas-contacto {
-  border-radius: 5px;
-  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
   margin-bottom: 20px;
   margin-top: 50px;
   background: #f8f8f8; }
-  /* line 10, ../../Leonel_Divoy_MFArquitectura_Final/scss/contacto.scss */
   section.tarjetas-contacto .tarjetas-contacto__titular {
     font-size: 20px;
     font-weight: 600;
@@ -300,13 +411,13 @@ section.tarjetas-contacto {
     text-align: center;
     background-image: url("../img/marmol-negro1.jpg");
     height: 50px;
-    padding-top: 5px;
-    color: #ffffff; }
-  /* line 18, ../../Leonel_Divoy_MFArquitectura_Final/scss/contacto.scss */
+    margin-top: 100px;
+    color: #ffffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; }
   section.tarjetas-contacto .formulario {
     padding-top: 20px;
     padding-bottom: 20px; }
-    /* line 21, ../../Leonel_Divoy_MFArquitectura_Final/scss/contacto.scss */
     section.tarjetas-contacto .formulario .formulario__input,
     section.tarjetas-contacto .formulario .formulario__area,
     section.tarjetas-contacto .formulario .formulario__submit {
@@ -320,112 +431,120 @@ section.tarjetas-contacto {
       margin-bottom: 20px;
       margin-top: 20px;
       padding: 10px; }
-    /* line 35, ../../Leonel_Divoy_MFArquitectura_Final/scss/contacto.scss */
     section.tarjetas-contacto .formulario .formulario__submit:hover {
       cursor: pointer;
       box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5);
       background: #000000;
       color: #ffffff; }
 
-/* line 10, ../../Leonel_Divoy_MFArquitectura_Final/scss/styles.scss */
+@media screen and (min-width: 1024px) {
+  section.tarjetas-contacto .tarjetas-contacto__titular {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: "Quicksand";
+    height: 80px;
+    padding-top: 15px; } }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-/* line 11, ../../Leonel_Divoy_MFArquitectura_Final/scss/styles.scss */
-body {
-  font-family: 'Barlow', sans-serif; }
-
-/* line 12, ../../Leonel_Divoy_MFArquitectura_Final/scss/styles.scss */
 .contenedor {
   width: 90%;
-  margin: auto; }
+  margin: auto;
+  max-width: 1000px; }
 
-/* line 13, ../../Leonel_Divoy_MFArquitectura_Final/scss/styles.scss */
-.fondo {
-  background-image: url(../img/marmol-blanco.jpg);
+/* ---------------------------------------- */
+/* ---------------- BODY ---------------- */
+body.fondo {
+  font-family: 'Barlow', sans-serif;
+  background-image: url("../img/marmol-blanco.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
 
-/* line 16, ../../Leonel_Divoy_MFArquitectura_Final/scss/styles.scss */
-main section .social {
-  margin: 50px; }
-  /* line 18, ../../Leonel_Divoy_MFArquitectura_Final/scss/styles.scss */
-  main section .social h2 {
-    font-size: 30px;
-    font-weight: 600;
-    font-family: "Quicksand";
-    text-align: center;
-    margin-bottom: 20px;
-    color: #929292; }
-  /* line 24, ../../Leonel_Divoy_MFArquitectura_Final/scss/styles.scss */
-  main section .social .social__link {
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    /* line 28, ../../Leonel_Divoy_MFArquitectura_Final/scss/styles.scss */
-    main section .social .social__link a {
-      margin: 0 30px; }
-      /* line 30, ../../Leonel_Divoy_MFArquitectura_Final/scss/styles.scss */
-      main section .social .social__link a i {
-        font-size: 30px;
-        color: #4d4d4d; }
-      /* line 34, ../../Leonel_Divoy_MFArquitectura_Final/scss/styles.scss */
-      main section .social .social__link a .fa-facebook-f:hover {
-        color: #03009c; }
-      /* line 37, ../../Leonel_Divoy_MFArquitectura_Final/scss/styles.scss */
-      main section .social .social__link a .fa-instagram:hover {
-        color: #83003d; }
-
-/* line 46, ../../Leonel_Divoy_MFArquitectura_Final/scss/styles.scss */
-section.navegacion {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #272727;
-  height: 250px;
-  margin-top: 30px; }
-  /* line 54, ../../Leonel_Divoy_MFArquitectura_Final/scss/styles.scss */
-  section.navegacion h3 {
-    font-size: 16px;
-    font-weight: 600;
-    font-family: "Quicksand";
+/* ---------------------------------------- */
+/* ---------------- MENÚ ---------------- */
+.negro {
+  background: black; }
+  .negro .logo {
+    width: 40px; }
+  .negro .nav-item:hover {
+    background: #6b6b6b;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; }
+  .negro .nav-link {
     color: #ffffff;
-    padding-top: 15px; }
-  /* line 59, ../../Leonel_Divoy_MFArquitectura_Final/scss/styles.scss */
-  section.navegacion .navegacion__accesos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 100px;
-    justify-items: center;
-    margin-top: 10px;
-    margin-bottom: 10px; }
-    /* line 66, ../../Leonel_Divoy_MFArquitectura_Final/scss/styles.scss */
-    section.navegacion .navegacion__accesos li {
-      list-style: none;
-      display: block; }
-      /* line 69, ../../Leonel_Divoy_MFArquitectura_Final/scss/styles.scss */
-      section.navegacion .navegacion__accesos li a {
-        text-decoration: none;
-        color: #ffffff;
-        line-height: 2; }
-        /* line 73, ../../Leonel_Divoy_MFArquitectura_Final/scss/styles.scss */
-        section.navegacion .navegacion__accesos li a i {
-          font-size: 20px;
-          margin-right: 10px; }
-      /* line 78, ../../Leonel_Divoy_MFArquitectura_Final/scss/styles.scss */
-      section.navegacion .navegacion__accesos li a:hover {
-        border-bottom: #ffffff solid 2px; }
+    font-size: 1rem;
+    font-weight: 200;
+    font-family: "Barlow";
+    text-align: center; }
+  .negro .active {
+    background: #929292; }
 
-/* line 85, ../../Leonel_Divoy_MFArquitectura_Final/scss/styles.scss */
-footer.pie-pagina {
+/* AL HACER SCROLL */
+.top-nav-collapse {
+  background: rgba(131, 131, 131, 0.9); }
+
+/* ---------------------------------------- */
+/* ----------- ACCESOS RÁPIDOS ----------- */
+section.accesos-rapidos {
+  text-align: center;
+  background: #2b2b2b;
+  color: #ffffff;
+  height: 220px;
+  padding-top: 15px;
+  margin-top: 50px;
+  font-family: 'Quicksand'; }
+  section.accesos-rapidos h4 {
+    padding-top: 10px;
+    font-size: 1.3rem;
+    font-weight: 600; }
+  section.accesos-rapidos .accesos-rapidos__links {
+    padding-top: 10px;
+    padding-bottom: 15px; }
+    section.accesos-rapidos .accesos-rapidos__links a {
+      padding-right: 10px;
+      text-decoration: none;
+      color: #ffffff; }
+    section.accesos-rapidos .accesos-rapidos__links i {
+      padding-right: 5px; }
+  section.accesos-rapidos .accesos-rapidos__links--sociales i {
+    font-size: 1.7rem;
+    padding-right: 20px;
+    padding-top: 10px;
+    color: #ffffff;
+    margin: auto; }
+
+/* ---------------------------------------- */
+/* --------------- FOOTER --------------- */
+footer.footer-copyrigh {
   text-align: center;
   color: #ffffff;
-  font-size: 18px;
-  padding-top: 5px;
+  font-size: 1rem;
+  font-weight: 200;
+  font-family: "Barlow";
   background: #000000;
-  height: 35px; }
+  height: 40px;
+  padding-top: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5); }
 
-/*# sourceMappingURL=styles.css.map */
+/* ---------------------------------------- */
+/* ----------- MEDIA QUERIES ----------- */
+@media screen and (min-width: 992px) {
+  .accesos-rapidos__links a {
+    margin-right: 50px; } }
+
+@media screen and (min-width: 1024px) {
+  .accesos-rapidos__links a:hover {
+    cursor: pointer;
+    border-bottom: #ffffff solid 2px; }
+  .accesos-rapidos__links--sociales .fa-facebook-f:hover {
+    color: #004ddb; }
+  .accesos-rapidos__links--sociales .fa-instagram:hover {
+    color: #d60096; }
+  .accesos-rapidos__links--sociales .fa-whatsapp:hover {
+    color: #2e9100; }
+  .accesos-rapidos__links--sociales .fa-envelope:hover {
+    color: #cf0000; } }

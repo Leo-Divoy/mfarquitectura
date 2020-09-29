@@ -1,34 +1,62 @@
 /* COLORES  */
-/* line 4, ../../Leonel_Divoy_MFArquitectura_Final/scss/sobre-mi.scss */
 section.tarjetas-sobreMi {
-  border-radius: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   box-shadow: 0 4px 4px 0 rgba(123, 123, 123, 0.5);
-  margin-bottom: 20px;
   margin-top: 50px;
   background: #f8f8f8; }
-  /* line 10, ../../Leonel_Divoy_MFArquitectura_Final/scss/sobre-mi.scss */
-  section.tarjetas-sobreMi .tarjetas-sobreMi__titular {
-    font-size: 20px;
+  section.tarjetas-sobreMi .tarjetas__titular--about {
+    font-size: 1.25rem;
     font-weight: 600;
     font-family: "Quicksand";
     text-align: center;
     background-image: url("../img/marmol-negro1.jpg");
     height: 50px;
-    padding-top: 5px;
-    color: #ffffff; }
-  /* line 18, ../../Leonel_Divoy_MFArquitectura_Final/scss/sobre-mi.scss */
+    margin-top: 100px;
+    color: #ffffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; }
   section.tarjetas-sobreMi .tarjetas-sobreMi__info {
     display: grid;
     grid-template-rows: 1fr;
-    row-gap: 20px;
-    padding: 15px 0;
+    row-gap: 10px;
+    padding-top: 10px;
     text-align: justify;
     font-size: 16px;
     font-weight: 400;
     font-family: "Barlow"; }
-  /* line 26, ../../Leonel_Divoy_MFArquitectura_Final/scss/sobre-mi.scss */
   section.tarjetas-sobreMi img {
     width: 100%;
-    box-shadow: 0 4px 4px 0 rgba(123, 123, 123, 0.5); }
+    box-shadow: 0 4px 4px 0 rgba(123, 123, 123, 0.5);
+    margin-bottom: 15px; }
 
-/*# sourceMappingURL=sobre-mi.css.map */
+/* ---------------------------------------------------------- */
+/* -------------------- MEDIA QUERIES -------------------- */
+@media screen and (min-width: 992px) {
+  section.tarjetas-sobreMi .tarjetas-sobreMi__info {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px; }
+    section.tarjetas-sobreMi .tarjetas-sobreMi__info img {
+      height: 98%;
+      object-fit: cover;
+      margin-bottom: 20px; } }
+
+@media screen and (min-width: 1024px) {
+  section.tarjetas-sobreMi .tarjetas__titular--about {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: "Quicksand";
+    height: 80px;
+    padding-top: 15px; }
+  section.tarjetas-sobreMi .tarjetas-sobreMi__info {
+    column-gap: 20px; } }
+
+@media screen and (min-width: 1200px) {
+  section.tarjetas-sobreMi .tarjetas__titular--about {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: "Quicksand";
+    height: 80px;
+    padding-top: 15px; }
+  section.tarjetas-sobreMi .tarjetas-sobreMi__info {
+    column-gap: 20px; } }
