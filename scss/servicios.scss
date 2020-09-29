@@ -2,19 +2,30 @@
 @import '../scss/mixins';
 
 section.tarjetas-servicios {
-border-radius: 5px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
 box-shadow: 0 4px 4px 0 rgba(123,123,123,.5);
-margin-bottom: 20px;
 margin-top: 50px;
 background: $tarjetas;
-    .tarjetas-servicios__titular {
+    .tarjetas__titular--servicios1 {
     @include h1 (20px, 600, 'Quicksand');
     text-align: center;
     background-image: url("../img/marmol-negro1.jpg");
     height: 50px;
-    padding-top: 5px;
+    margin-top: 100px;
     color: $titulo;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     }
+    .tarjetas__titular--servicios {
+        @include h1 (20px, 600, 'Quicksand');
+        text-align: center;
+        background-image: url("../img/marmol-negro1.jpg");
+        height: 50px;
+        color: $titulo;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        }
     .tarjetas-servicios__info {
     display: grid;
     grid-template-rows: 1fr;
@@ -35,5 +46,63 @@ background: $tarjetas;
     margin-right: 15px;
     font-size: 25px;
     color: #e4e4e4;
+    }
+}
+/* ---------------------------------------------------------- */
+
+/* -------------------- MEDIA QUERIES -------------------- */
+@media screen and (min-width: 992px) {
+    section.tarjetas-servicios {
+        .tarjetas-servicios__info {
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 20px;
+            img {
+            height: 98%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    section.tarjetas-servicios {
+        .tarjetas__titular--servicios1 {
+        @include h1 (3rem, 600, 'Quicksand');
+        height: 80px;
+        padding-top: 15px;
+        }
+        .tarjetas__titular--servicios {
+        @include h1 (3rem, 600, 'Quicksand');
+        height: 80px;
+        padding-top: 15px;
+        }
+        .tarjetas-servicios__info {
+        column-gap: 20px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    section.tarjetas-servicios {
+    height: 580px;
+        .tarjetas__titular--servicios1 {
+        @include h1 (3rem, 600, 'Quicksand');
+        height: 80px;
+        padding-top: 15px;
+        }
+        .tarjetas__titular--servicios {
+        @include h1 (3rem, 600, 'Quicksand');
+        height: 80px;
+        padding-top: 15px;
+        }
+        .tarjetas-servicios__info {
+        column-gap: 20px;
+            img {
+            height: 80%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            }
+        }
     }
 }
