@@ -94,7 +94,7 @@ font-family: 'Quicksand';
 footer.footer-copyrigh {
 text-align: center;
 color: $txt-footer;
-@include p(1rem, 200, 'Barlow');
+@include p(0.8rem, 200, 'Barlow');
 background: $bg-footer;
 height: 40px;
 padding-top: 8px;
