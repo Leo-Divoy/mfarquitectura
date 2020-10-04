@@ -27,7 +27,7 @@ background: $tarjetas;
     color: #000000;
     }
     .tarjetas__titular {
-    @include h1 (1.25rem, 600, 'Quicksand');
+    @include h1 (1.7rem, 600, 'Quicksand');
     text-align: center;
     background-image: url("../img/marmol-negro1.jpg");
     height: 50px;
