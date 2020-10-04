@@ -1,51 +1,40 @@
 /* COLORES  */
-section.tarjetas-galeria {
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
-  margin-bottom: 20px;
-  margin-top: 50px;
-  background: #f8f8f8; }
-  section.tarjetas-galeria .tarjetas-galeria--titular {
+.tarjetas__fotos {
+  display: grid;
+  grid-template-rows: 1fr;
+  row-gap: 10px;
+  margin-top: 80px;
+  cursor: pointer; }
+  .tarjetas__fotos .container-fotos {
+    position: relative;
+    width: 100%; }
+  .tarjetas__fotos .image {
+    display: block;
+    width: 100%;
+    height: auto; }
+  .tarjetas__fotos .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease; }
+  .tarjetas__fotos .container-fotos:hover .overlay {
+    bottom: 0;
+    height: 100%; }
+  .tarjetas__fotos .text {
+    color: #000000;
     font-size: 20px;
-    font-weight: 600;
-    font-family: "Quicksand";
-    text-align: center;
-    background-image: url("../img/marmol-negro1.jpg");
-    height: 50px;
-    margin-top: 100px;
-    color: #ffffff;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px; }
-  section.tarjetas-galeria .tarjetas__fotos {
-    display: grid;
-    grid-template-rows: 1fr;
-    row-gap: 20px;
-    padding: 15px 0; }
-    section.tarjetas-galeria .tarjetas__fotos img.galeria {
-      width: 100%; }
-    section.tarjetas-galeria .tarjetas__fotos img:hover {
-      cursor: pointer;
-      transform: scale(1.1);
-      transition: all 3s; }
-    section.tarjetas-galeria .tarjetas__fotos .contenedor-fotos {
-      overflow: hidden;
-      border-radius: 5px;
-      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5); }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center; }
 
 /* ---------------------------------------------------------- */
 /* -------------------- MEDIA QUERIES -------------------- */
-@media screen and (min-width: 1024px) {
-  section.tarjetas-galeria .tarjetas-galeria--titular {
-    font-size: 3rem;
-    font-weight: 600;
-    font-family: "Quicksand";
-    height: 80px;
-    padding-top: 15px; }
-  section.tarjetas-galeria .tarjetas__fotos img {
-    filter: grayscale(100%); }
-  section.tarjetas-galeria .tarjetas__fotos img:hover {
-    cursor: pointer;
-    filter: none;
-    transform: scale(1.1);
-    transition: all 3s; } }
